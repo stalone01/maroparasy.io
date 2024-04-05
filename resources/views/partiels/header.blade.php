@@ -1,13 +1,13 @@
 <div class="bg-violet-950 h-1/5 text-white relative">
     <div class="flex items-center h-12 static navbar">
         <div class="ms-16 text-4xl font-extrabold">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 to-lime-400"">Stalone'S service</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 to-lime-400 hover:animate-pulse">Stalone'S service</span>
         </div>
-        <ul class="flex items-center space-x-10 ms-auto me-12 p-8 text-2xl">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Contacts</a></li>
+        <ul class="flex items-center space-x-10 ms-auto me-12 p-8 text-2xl ">
+            <li class="hover:animate-bounce"><a href="#">Accueil</a></li>
+            <li class="hover:animate-bounce"><a href="#">Services</a></li>
+            <li class="hover:animate-bounce"><a href="#">A propos</a></li>
+            <li class="hover:animate-bounce"><a href="#">Contacts</a></li>
         </ul>
     </div>
     <div class="flex items-center space-x-10 m-auto static me-10 ms-10 IntroHead">

@@ -20,7 +20,7 @@
             </button>
         </div>
     </div>
-    <div class="section3">
+    <div class="section3" id="Apropos">
         <div>
             <div class="flex items-center justify-center m-5 titre">
                 <h1 class="text-3xl text-violet-950 font-bold">Our Best Tours</h1>
@@ -92,7 +92,7 @@
         </div>
     </div>
     <div class="bg-violet-950 h-60 section-formulaire">
-        <form class="flex flex-col items-center justify-center" action="" method="post">
+        <form class="flex flex-col items-center justify-center" action="{{ route('comments') }}" method="post">
             <h2 class="text-xl font-bold text-white m-6">Post Comments</h2><br>
             <input class="bg-transparent border-b border-white w-1/2 m-2" type="text" name="username" id="username" placeholder="enter your username...">
             <input class="bg-transparent border-b border-white w-1/2 m-2" type="text" name="msg" id="msg" placeholder="enter your comments...">
@@ -100,7 +100,7 @@
         </form>
     </div>
     <div class="flex items-center justify-items-center w-full px-8 bg-black mt-8 mb-8 p-6 text-white section-contact">
-        <div class="flex flex-col justify-center w-2/5 ml-6 contact">
+        <div class="flex flex-col justify-center w-2/5 ml-6 " id="contact">
             <h1 class="text-xl font-bold p-4">Our Contacts</h1>
             <div class="">
                 <h3 class="text-md p-2">lot akt II 90 Vontovorona</h3>
@@ -109,7 +109,7 @@
             </div>
         </div>
         <div class="border-l border-white w-2/5 formulaire-contact">
-            <form class="flex flex-col items-center justify-center" action="" method="post">
+            <form class="flex flex-col items-center justify-center" action="{{ route('contactUs') }}" method="post">
                 <h2 class="text-xl font-bold text-white m-6">Contact Us</h2><br>
                 <input class="bg-transparent border-b border-white w-4/6 m-2" type="email" name="email" id="email" placeholder="enter your username...">
                 <input class="bg-transparent border-b border-white w-4/6 m-2" type="text" name="message" id="message" placeholder="enter your text...">

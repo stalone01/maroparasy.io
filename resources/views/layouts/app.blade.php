@@ -6,7 +6,7 @@
     @vite('resources/css/app.css')
     <title>stalone's service</title>
 </head>
-<body>
+<body class="bg-gray-200">
     
     @include('partiels.header')
 

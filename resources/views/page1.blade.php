@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-    @include('partiels.showComment')
+        @include('partiels.showComment')
     </div>
     @include('partiels.comment')
     <div class="flex items-center justify-items-center w-full px-8 bg-black mt-8 mb-8 p-6 text-white section-contact">

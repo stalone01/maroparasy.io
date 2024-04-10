@@ -1,4 +1,10 @@
 <div class="bg-violet-950 h-1/5 text-white relative">
+    @if (session('status'))
+        <div class="text-red-800">
+            <p>{{ session('status') }}</p>
+        </div>  
+    @endif
+
     <div class="flex items-center h-12 static navbar">
         <div class="ms-16 text-3xl font-extrabold">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 to-lime-400 hover:animate-pulse">Stalone'S service</span>

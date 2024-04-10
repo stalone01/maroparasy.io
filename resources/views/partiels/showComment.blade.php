@@ -24,7 +24,9 @@
                     </p>
                 @endforeach
                 </div>
-                {{ $comments->links() }}
+                <div class="flex flex-row items-center justify-center">
+                    {{ $comments->links() }}
+                </div>
             </div>
 
         </div>

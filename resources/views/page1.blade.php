@@ -75,6 +75,7 @@
         </div>
         <div class="border-l border-white w-2/5 formulaire-contact">
             <form class="flex flex-col items-center justify-center" action="{{ route('posts') }}" method="post">
+                @csrf
                 <h2 class="text-xl font-bold text-white m-6">Contact Us</h2><br>
                 <input class="bg-transparent border-b border-white w-4/6 m-2" type="email" name="email" id="email" placeholder="enter your username...">
                 <input class="bg-transparent border-b border-white w-4/6 m-2" type="text" name="message" id="message" placeholder="enter your text...">

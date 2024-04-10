@@ -17,7 +17,7 @@
                 <td>{{$post->email}}</td>
                 <td>{{$post->message}}</td>
                 <td class="">
-                    <button><a href="#">Modifier</a></button>
+                    <button><a href="{{route('updateposts',$post->id)}}">Modifier</a></button>
                     <button><a href="#">Supprimer</a></button>
                 </td>
             </tr>

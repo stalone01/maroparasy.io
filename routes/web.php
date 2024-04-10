@@ -29,5 +29,7 @@ Route::post('/create-comments', [ProController::class, 'createComment'])->name('
 
 Route::get('/list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
 
-Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des
+Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des messages
+Route::post('/update-posts', [PostsController::class, 'updatePost'])->name('upPosts'); //Update des Enregistrements
+Route::get('/update-posts/{id}', [PostsController::class, 'updatePosts'])->name('updateposts'); //lien vers la page de modification
 

@@ -22,7 +22,7 @@ class ProController extends Controller
     public function createComment(Request $request)
     {
         $request->validate([
-            'username'=>'required|min:3|max:50|unique:username,column,except,id',
+            'username'=>'required|min:3|max:50|unique:comments',
             'msg'=>'required|min:10|max:200'
         ]);
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,9 +27,7 @@ Route::post('/create-comments', [ProController::class, 'createComment'])->name('
 
 //Route pour les pots
 
-Route::get('/list.posts', [ProController::class, 'show_comments'])->name('listPost'); //Affiche le liste
+Route::get('/list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
 
-Route::post('/create-posts', [ProController::class, 'createPosts'])->name('posts'); //Enregistre des
+Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des
 
-// Route::post('/create.contactUs', [ProController::class, 'createContact'])->name('contactUs');
-// Route::post('/store', [ProController::class, 'store'])->name('store');

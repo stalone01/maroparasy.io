@@ -5,7 +5,7 @@
         </div>
         <div class="flex flex-col items-center justify-center ">
             <div class="flex items-center justify-center -mb-9 z-10">
-                <div class="bg-white w-16 h-16 border-2 border-violet-950 rounded-full">
+                <div class="bg-white w-16 h-16 border-2 border-violet-950 rounded-full animate-spin">
                     <img class="" src="/images/profile-simple.svg" alt="profil">
                 </div>
             </div>
@@ -24,8 +24,8 @@
                     </p>
                 @endforeach
                 </div>
-                <div class="flex flex-row items-center justify-center">
-                    {{ $comments->links() }}
+                <div class="flex flex-row items-center justify-center mt-4">
+                    {{ $comments->links('pagination::simple-tailwind') }}
                 </div>
             </div>
 

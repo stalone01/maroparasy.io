@@ -16,7 +16,7 @@
                 <td>{{$post->id}}</td>
                 <td>{{$post->email}}</td>
                 <td>{{$post->message}}</td>
-                <td>
+                <td class="">
                     <button><a href="#">Modifier</a></button>
                     <button><a href="#">Supprimer</a></button>
                 </td>

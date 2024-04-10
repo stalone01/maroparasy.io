@@ -1,4 +1,10 @@
-
+@if (session('status'))
+    <div>
+        <p style="color: green;">
+            {{session('status')}}
+        </p>
+    </div>
+@endif
 <div>
     
     <table>
@@ -18,7 +24,7 @@
                 <td>{{$post->message}}</td>
                 <td class="">
                     <button><a href="{{route('updateposts',$post->id)}}">Modifier</a></button>
-                    <button><a href="#">Supprimer</a></button>
+                    <button><a href="{{route('deletePosts',$post->id)}}">Supprimer</a></button>
                 </td>
             </tr>
         @endforeach

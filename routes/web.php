@@ -28,6 +28,7 @@ Route::post('/create-comments', [ProController::class, 'createComment'])->name('
 //Route pour les pots
 
 Route::get('/list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
+Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])->name('deletePosts');
 
 Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des messages
 Route::post('/update-posts', [PostsController::class, 'updatePost'])->name('upPosts'); //Update des Enregistrements

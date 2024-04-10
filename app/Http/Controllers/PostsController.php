@@ -55,4 +55,11 @@ class PostsController extends Controller
         return redirect('/list.posts')->with('status',"message a été bien modifié avec succes");
     }
 
+    public function delete_posts($id){
+        $posts = Post::find($id);
+        $posts->delete();
+
+        return redirect('/list.posts')->with('status',"message a été bien supprimé avec succes");
+    }
+
 }

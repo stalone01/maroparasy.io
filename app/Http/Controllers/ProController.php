@@ -9,9 +9,8 @@ class ProController extends Controller
 {
     public function index(){
         $comments = Comment::all();
-        $posts = Post::all();
 
-        return view('page1');
+        return view('partiels.comment');
     }
 
     public function create()

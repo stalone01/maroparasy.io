@@ -10,7 +10,13 @@ class ProController extends Controller
     public function index(){
         $comments = Comment::all();
 
-        return view('partiels.comment');
+        return view('page1', compact('comments'));
+    }
+
+    public function show_comments(){
+        $comments = Comment::all();
+
+        return view('partiels.showComment', compact('comments'));
     }
 
     public function create()

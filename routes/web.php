@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ProController::class, 'index'])->name('welcome');
+Route::get('/list.comment', [ProController::class, 'show_comments'])->name('listComment');
 Route::get('/create.comments', [ProController::class, 'create'])->name('comments');
 Route::get('/create.contactUs', [ProController::class, 'create'])->name('contactUs');
 Route::post('/store', [ProController::class, 'store'])->name('store');

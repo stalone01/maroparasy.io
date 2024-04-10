@@ -17,9 +17,12 @@
             </tr>
         </thead>
         <tbody>
+        @php
+            $ide = 1;
+        @endphp
         @foreach ($posts as $post)
             <tr>
-                <td>{{$post->id}}</td>
+                <td>{{$ide}}</td>
                 <td>{{$post->email}}</td>
                 <td>{{$post->message}}</td>
                 <td class="">
@@ -27,6 +30,9 @@
                     <button><a href="{{route('deletePosts',$post->id)}}">Supprimer</a></button>
                 </td>
             </tr>
+            @php
+                $ide += 1;
+            @endphp
         @endforeach
         </tbody>
         </table>

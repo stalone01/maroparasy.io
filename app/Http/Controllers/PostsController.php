@@ -27,7 +27,7 @@ class PostsController extends Controller
 
         $posts = new Post();
         $posts->email = $request->email;
-        $posts->message= $request->message;
+        $posts->message = $request->message;
         $posts->save();
 
         return redirect('/')->with('status',"message a été bien envoyé avec succes");
@@ -35,7 +35,7 @@ class PostsController extends Controller
 
     public function updatePosts($id){
 
-        $posts = Post::find($id);
+        $posts = Post::findOrFail($id);
 
         return view('updatePost', compact('posts'));
     }
@@ -43,14 +43,14 @@ class PostsController extends Controller
     public function updatePost(Request $request){
 
         $request->validate([
-            'email'=>'required|min:7|max:60|unique:posts',
+            'email'=>'required|min:7|max:60',
             'message'=>'required|min:10|max:255'
         ]);
 
-        $posts = Post::findOrFail($request->id);
+        $posts = Post::find($request->id);
         $posts->email = $request->email;
         $posts->message= $request->message;
-        $posts->save();
+        $posts->update();
 
         return redirect('/list.posts')->with('status',"message a été bien modifié avec succes");
     }

@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="border-l border-white w-2/5 formulaire-contact">
-            <form class="flex flex-col items-center justify-center" action="{{ route('upPosts') }}" method="post">
+            <form class="flex flex-col items-center justify-center" action="{{ route('updatePost') }}" method="post">
                 @csrf
                 <h2 class="text-xl font-bold text-white m-6">Contact Us</h2><br>
                 <input type="hidden" name="id" id="id" value="{{$posts->id}}">

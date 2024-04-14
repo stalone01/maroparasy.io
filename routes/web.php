@@ -4,16 +4,7 @@ use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 
 Route::get('/', [ProController::class, 'index'])->name('welcome'); //page principale
 
@@ -27,10 +18,12 @@ Route::post('/create-comments', [ProController::class, 'createComment'])->name('
 
 //Route pour les pots
 
+Route::post('/update-posts', [PostsController::class, 'updatePost'])->name('updatePost'); //Update les Enregistrements
+
 Route::get('/list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
 Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])->name('deletePosts');
 
 Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des messages
-Route::post('/update-posts', [PostsController::class, 'updatePost'])->name('upPosts'); //Update des Enregistrements
+
 Route::get('/update-posts/{id}', [PostsController::class, 'updatePosts'])->name('updateposts'); //lien vers la page de modification
 

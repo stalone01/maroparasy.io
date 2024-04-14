@@ -6,7 +6,7 @@
     </div>
 @endif
 <div>
-    
+
     <table>
         <thead>
             <tr>
@@ -36,5 +36,5 @@
         @endforeach
         </tbody>
         </table>
-   
+
 </div>

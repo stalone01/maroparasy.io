@@ -34,29 +34,4 @@ class ProController extends Controller
         return redirect('/')->with('status',"Commentaire bien envoyé avec succes");
     }
 
-    public function store()
-    {
-
-    }
-
-    public function show($id)
-    {
-
-    }
-
-    public function edit()
-    {
-
-    }
-
-    public function update()
-    {
-
-    }
-
-    public function destroy()
-    {
-
-    }
-    
 }

@@ -19,7 +19,7 @@
                     </div>
 
                         <!-- on affiche ici le msg des clients -->
-                    <p class="flex justify-center bg-slate-100 rounded-lg p-2 mt-2"> 
+                    <p class="flex justify-center bg-slate-100 rounded-lg p-2 mt-2">
                             {{$comment->msg}}
                     </p>
                 @endforeach

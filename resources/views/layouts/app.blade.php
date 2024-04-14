@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,12 @@
     <title>stalone's service</title>
 </head>
 <body class="bg-gray-200">
-    
+
     @include('partiels.header')
 
     @yield('content')
 
     @include('partiels.footer')
-    
+
 </body>
 </html>

@@ -47,7 +47,7 @@ class PostsController extends Controller
             'message'=>'required|min:10|max:255'
         ]);
 
-        $posts = Post::find($request->id);
+        $posts = Post::findOrFail($request->id);
         $posts->email = $request->email;
         $posts->message= $request->message;
         $posts->save();

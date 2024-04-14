@@ -6,7 +6,7 @@
         <div class="flex flex-col items-center justify-center ">
             <div class="flex items-center justify-center -mb-9 z-10">
                 <div class="bg-white w-16 h-16 border-2 border-violet-950 rounded-full animate-spin">
-                    <img class="" src="/images/profile-simple.svg" alt="profil">
+                    <img class="" src="/images/avatar/profile-simple.svg" alt="profil">
                 </div>
             </div>
             <div class="grid-cols-1 w-3/5 h-42 border-8 border-gray-400 mb-28 p-4 pt-8 z-0">

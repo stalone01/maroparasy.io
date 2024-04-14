@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProController extends Controller
 {
     public function index(){
-        $comments = Comment::paginate(3);
+        $comments = Comment::paginate(1);
 
         return view('page1', compact('comments'));
     }

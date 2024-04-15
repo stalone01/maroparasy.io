@@ -15,9 +15,8 @@ Route::get('/list.comment', [ProController::class, 'showComments'])->name('listC
 
 Route::post('/create-comments', [ProController::class, 'createComment'])->name('comments'); //Enregistre des comments
 
-//Route pour les collines
 
-Route::get('/', [ColiController::class, 'index']);
+// Route::get('/collines', [ColiController::class, 'showcoli']);
 
 //Route pour les pots
 

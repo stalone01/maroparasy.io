@@ -25,7 +25,7 @@
             <div class="flex items-center justify-center m-5 titre">
                 <h1 class="text-3xl text-violet-950 font-bold">Our Best Tours</h1>
             </div>
-            @include('partiels.section2')
+        @include('partiels.section2')
         </div>
         @include('partiels.showComment')
     </div>

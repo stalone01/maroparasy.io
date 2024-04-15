@@ -2,21 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Colline;
 use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class ProController extends Controller
 {
     public function index(){
-        $comments = Comment::all();
-        // dd($comments);
+        $comments = Comment::paginate(1);
+        $collines =Colline::paginate(3);
 
-        return view('page1', compact('comments'));
+        return view('page1', compact('comments','collines'));
     }
 
     public function showComments(){
         $comments = Comment::paginate(1);
-        // dd($comments);
+
 
         return view('partiels/showComment', compact('comments'));
     }

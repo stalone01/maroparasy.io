@@ -7,7 +7,7 @@
             @foreach ($comments as $comment )
             <div class="flex items-center justify-center -mb-9 z-10">
                 <div class="bg-white w-16 h-16 border-2 border-violet-950 rounded-full animate-spin">
-                    <img class="" src="{{ $comment->avatar->path }}" alt="profil">
+                    <img class="" src="{{$comment->avatar ? $comment->avatar->path : "/images/avatar/profile-simple.svg"}}" alt="profil">
                 </div>
             </div>
             <div class="grid-cols-1 w-3/5 h-42 border-8 border-gray-400 mb-28 p-4 pt-8 z-0">
@@ -26,7 +26,7 @@
             @endforeach
                 </div>
                 <div class="flex flex-row items-center justify-center mt-4">
-                    {{ $comments->links('pagination::simple-tailwind') }}
+                    {{ $comments->links('pagination::tailwind') }}
                 </div>
             </div>
 

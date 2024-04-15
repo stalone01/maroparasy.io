@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ColiController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProController;
 use Illuminate\Support\Facades\Route;
@@ -10,11 +11,13 @@ Route::get('/', [ProController::class, 'index'])->name('welcome'); //page princi
 
 //route pour les comments
 
-Route::get('/list.comment', [ProController::class, 'show_comments'])->name('listComment'); //Affiche le liste des comments
+Route::get('/list.comment', [ProController::class, 'showComments'])->name('listComment'); //Affiche le liste des comments
 
 Route::post('/create-comments', [ProController::class, 'createComment'])->name('comments'); //Enregistre des comments
 
+//Route pour les collines
 
+Route::get('/', [ColiController::class, 'index']);
 
 //Route pour les pots
 

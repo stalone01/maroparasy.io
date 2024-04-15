@@ -8,15 +8,17 @@ use Illuminate\Http\Request;
 class ProController extends Controller
 {
     public function index(){
-        $comments = Comment::paginate(1);
+        $comments = Comment::all();
+        // dd($comments);
 
         return view('page1', compact('comments'));
     }
 
-    public function show_comments(){
-        $comments = Comment::all();
+    public function showComments(){
+        $comments = Comment::paginate(1);
+        // dd($comments);
 
-        return view('partiels.showComment', compact('comments'));
+        return view('partiels/showComment', compact('comments'));
     }
 
     public function createComment(Request $request)

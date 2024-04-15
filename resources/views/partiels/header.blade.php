@@ -2,7 +2,7 @@
     @if (session('status'))
         <div class="text-red-800">
             <p>{{ session('status') }}</p>
-        </div>  
+        </div>
     @endif
 
     <div class="flex items-center h-12 static navbar">
@@ -24,7 +24,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta voluptate cum enim mollitia culpa?</p>
         </div>
         <div class="h-auto w-1/2 ">
-            <img src="/images/Atongona.jpg" alt="Rova Antongona" class="h-fit m-5 p-14 rounded-xl" >
+            <img src="/images/collines/Atongona.jpg" alt="Rova Antongona" class="h-fit m-5 p-14 rounded-xl" >
         </div>
     </div>
 </div>

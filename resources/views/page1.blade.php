@@ -5,12 +5,12 @@
     </div>
     <div class="flex items-center justify-center space-x-8 h-80 px-4 bg-violet-400">
         <div class=" w-5/12 img-left">
-            <img src="/images/Rova-Ambohidrabiby.jpeg" alt="tombeaux-ambotrabiby" class="h-64 min-h-20 w-auto">
+            <img src="/images/collines/Rova-Ambohidrabiby.jpeg" alt="tombeaux-ambotrabiby" class="h-64 min-h-20 w-auto">
         </div>
         <div class="flex flex-col ctnt-rigth w-5/12 space-y-4">
             <h1 class="text-3xl text-violet-950 font-bold">Lorem ipsum dolor sit amet.</h1>
             <p class="mt-2 mb-2 truncate">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Omnis ducimus accusantium consequatur nostrum assumenda libero maiores, <br>
                 repellat quas delectus unde?
                 Lorem ipsum, <br> dolor sit amet consectetur adipisicing elit. Voluptatem.
@@ -25,41 +25,7 @@
             <div class="flex items-center justify-center m-5 titre">
                 <h1 class="text-3xl text-violet-950 font-bold">Our Best Tours</h1>
             </div>
-            <div class="flex items-center justify-center space-x-9 mx-4 carte">
-                <div class="w-72 rounded-md shadow-md shadow-violet-600 carte1">
-                    <img class="h-48 w-full" src="/images/rovakelyTsahadit.jpg" class="card-img-top" alt="...">
-                    <div class="flex flex-col space-y-4 card-body p-3">
-                        <h5 class="font-semibold text-lg">Colline d'antsahadinta</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <h3 class="font-bold ">prix par personne: 10.00 € </h3>
-                    </div>
-                </div>
-                <div class=" w-72 rounded-md shadow-md shadow-violet-600 carte">
-                    <img class="h-48 w-full" src="/images/ambohimanga-rova.jpg" class="card-img-top" alt="...">
-                    <div class="flex flex-col space-y-4 card-body p-3">
-                        <h5 class="font-semibold text-lg">Colline d'ambohimanga</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
-                        <h3 class="font-bold ">prix par personne: 10.00 € </h3>
-                    </div>
-                </div>
-                <div class="w-72 rounded-md shadow-md shadow-violet-600 carte">
-                    <img class="h-48 w-full " src="/images/tombeaux-Ambohidratrimo.jpg" class="card-img-top" alt="...">
-                    <div class="flex flex-col space-y-4 card-body p-3">
-                        <h5 class="font-semibold text-lg">Colline d'Ambohidratrimo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <h3 class="font-bold ">prix par personne: 10.00 € </h3>
-                    </div>
-                </div>
-            </div>
+            @include('partiels.section2')
         </div>
         @include('partiels.showComment')
     </div>

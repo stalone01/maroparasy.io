@@ -1,4 +1,4 @@
-<div class="bg-violet-950 h-60 section-formulaire">
+<div class="bg-violet-950 h-72 section-formulaire">
             @csrf
         <form class="flex flex-col items-center justify-center" action="{{ route('comments') }}" method="post">
             @csrf

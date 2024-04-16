@@ -10,7 +10,11 @@
                 <h4>
                     {{ $colline->petit_titre }}
                 </h4>
-                <h3 class="font-bold ">prix par personne: {{ $colline->prix }} € </h3>
+                <h3 class="flex items-center justify-center font-bold ">prix par personne: {{ $colline->prix }} € </h3>
+
+                <div class="flex items-center justify-center">
+                    @include('partiels.commentCol')
+                </div>
             </div>
         </div>
         @endforeach

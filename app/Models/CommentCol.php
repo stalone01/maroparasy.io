@@ -13,4 +13,5 @@ class CommentCol extends Model
     public function colline(){
         return $this->belongsTo(Colline::class);
     }
+    
 }

@@ -4,6 +4,13 @@
             <p>{{ session('status') }}</p>
         </div>
     @endif
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <div class="text-red-800">
+                {{ $error }}
+            </div>
+        @endforeach
+    @endif
 
     <div class="flex items-center h-12 static navbar">
         <div class="ms-16 text-3xl font-extrabold">

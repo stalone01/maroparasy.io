@@ -32,6 +32,7 @@
         </div>
         <div class="h-auto w-1/2 ">
             <img src="/images/collines/Atongona.jpg" alt="Rova Antongona" class="h-fit m-5 p-14 rounded-xl" >
+            {{-- @include('partiels.imageAc') --}}
         </div>
     </div>
 </div>

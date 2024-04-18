@@ -1,0 +1,24 @@
+1-Carte Colline:
+
+->affichage dans le page principale: ->Route::get('/', [ProController::class, 'index']):
+ Controller utilisé: Procontroller et le fonction index() ainsi que le view page1
+ ->Affichage de la liste des collines:view page1 ou on include le view section2,
+    ->le section2 occupe l'affichage des données de la table collines
+    ->
+->Affichage des commentaires de la colli:
+    ->utilisation de la relation oneToMany avec model Colline et CommentCol
+
+2-Commentaire de service :
+->affichage des listes de commentaires:Route::get('/list.comment', [ProController::class, 'showComments'])
+    ->Controller:ProController, function showComments() et view('partiels/showComment');
+    ->
+
+3-Contact(posts):Application crud:
+->Affichage des listes des messages:Route::get('/list.posts', [PostsController::class, 'showPosts'])
+    ->Controller: PostsController, function: showPosts(), view showPosts
+->Modification des posts: Route::post('/create-posts', [PostsController::class, 'createPosts'])
+                          Route::get('/update-posts/{id}', [PostsController::class, 'updatePosts'])
+
+    ->Controller: PostsController, functions: createPosts() pour l'insertion et  updatePosts() pour le Modification
+->suppression de posts: Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])
+    ->Controller:PostsController, function: delete_posts() pour le suppression

@@ -18,6 +18,9 @@ Route::get('/list.comment', [ProController::class, 'showComments'])->name('listC
 
 Route::post('/create-comments', [ProController::class, 'createComment'])->name('comments'); //Enregistre des comments
 
+//routes pour creation commentaires collines
+Route::post('/commentaireC/{id}', [ColiController::class, 'createCommentC'])->name('commentC'); //Enregistre des comments
+
 
 //Route pour les posts
 

@@ -11,7 +11,7 @@
 2-Commentaire de service :
 ->affichage des listes de commentaires:Route::get('/list.comment', [ProController::class, 'showComments'])
     ->Controller:ProController, function showComments() et view('partiels/showComment');
-    ->
+    ->relation one to one pour le model Avatar et le comment pour afficher l'image d'Avatar, view showComment
 
 3-Contact(posts):Application crud:
 ->Affichage des listes des messages:Route::get('/list.posts', [PostsController::class, 'showPosts'])
@@ -20,5 +20,5 @@
                           Route::get('/update-posts/{id}', [PostsController::class, 'updatePosts'])
 
     ->Controller: PostsController, functions: createPosts() pour l'insertion et  updatePosts() pour le Modification
-->suppression de posts: Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])
+->Suppression de posts: Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])
     ->Controller:PostsController, function: delete_posts() pour le suppression

@@ -12,8 +12,12 @@
                 </h4>
                 <h3 class="flex items-center justify-center font-bold ">prix par personne: {{ $colline->prix }} € </h3>
 
+                    {{-- affichage commentaire --}}
                 <div class="flex items-center justify-center">
                     @include('partiels.commentCol')
+                </div>
+                <div class="flex items-center justify-center">
+                    @include('partiels.createComCol')
                 </div>
             </div>
         </div>

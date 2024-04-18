@@ -18,7 +18,7 @@
         </div>
         <ul class="flex items-center space-x-10 ms-auto me-12 p-8 text-2xl ">
             <li class="hover:animate-bounce"><a href="#accueil">Accueil</a></li>
-            <li class="hover:animate-bounce"><a href="#">Services</a></li>
+            <li class="hover:animate-bounce"><a href="#Services">Services</a></li>
             <li class="hover:animate-bounce"><a href="#Apropos">A propos</a></li>
             <li class="hover:animate-bounce"><a href="#contact">Contacts</a></li>
             <li class="hover:animate-bounce"><a href="{{ route('listPost') }}">Messages</a></li>

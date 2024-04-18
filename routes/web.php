@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\ColiController;
+use App\Http\Controllers\ImgAController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProController;
 use Illuminate\Support\Facades\Route;
 
-
+//route pour le stokage d'imageAccueil
+Route::get('/insert-image',[ImgAController::class, 'index']);
+Route::post('/insertion-imgAc',[ImgAController::class, 'store'])->name('insertionImage');
 
 Route::get('/', [ProController::class, 'index'])->name('welcome'); //page principale
 

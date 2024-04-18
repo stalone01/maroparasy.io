@@ -25,7 +25,8 @@ class ImgAController extends Controller
         $path = $request->file('file')->store('/public/ImageAcs');
 
         $imgAc = new ImageAc();
-        $imgAc->path = $request->path;
+        $imgAc->path = $path;
+        $imgAc->save();
 
         return redirect('/')->with('status',"succes !!!!!");
 

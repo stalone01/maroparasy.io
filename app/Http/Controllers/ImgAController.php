@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ImageAc;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -15,17 +16,18 @@ class ImgAController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
+        $request ->validate(
+            [
+                "path"=>['unique:image_acs'],
+            ]
+            );
 
-        $filename = "";
+        $path = $request->file('file')->store('/public/ImageAcs');
 
-        if ($request->hasFile('file_input')) {
-            $filename = $request->getSchemeAndHttpHost().'/storage/app/public/ImageAc/'.time().'.'.$request->file_input->extension();
-            $request->file_input->move(public_path('/storage/app/public/ImageAc/'),$filename);
-        }
-        $imageAc = ImageAc::saved([
-            'path'=>$filename
-        ]);
-        return redirect()->back();
+        $imgAc = new ImageAc();
+        $imgAc->path = $request->path;
+
+        return redirect('/')->with('status',"succes !!!!!");
+
     }
 }

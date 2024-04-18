@@ -15,9 +15,6 @@ return new class extends Migration
             $table->id();
             $table->mediumText('contenu');
 
-            // $table->unsignedBigInteger('col_id');
-            // $table->foreign('col_id')->references('id')->on('collines');
-
             $table->foreignId('colline_id')->constrained();
 
             $table->timestamps();

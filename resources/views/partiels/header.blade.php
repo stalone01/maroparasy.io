@@ -30,9 +30,9 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi pariatur neque libero doloremque veniam veritatis voluptatum et sed ipsa.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta voluptate cum enim mollitia culpa?</p>
         </div>
-        <div class="h-auto w-1/2 ">
-            <img src="/images/collines/Atongona.jpg" alt="Rova Antongona" class="h-fit m-5 p-14 rounded-xl" >
-            {{-- @include('partiels.imageAc') --}}
+        <div class="h-64 w-1/2 mt-4">
+            {{-- <img src="/images/collines/Atongona.jpg" alt="Rova Antongona" class="h-fit m-5 p-14 rounded-xl" > --}}
+            @include('partiels.imageAc')
         </div>
     </div>
 </div>

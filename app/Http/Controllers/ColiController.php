@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Colline;
 use App\Models\CommentCol;
+use App\Models\ImageAc;
 use Illuminate\Http\Request;
 
 class ColiController extends Controller
@@ -12,6 +13,7 @@ class ColiController extends Controller
     {
         $collines =Colline::all();
         $commentC = CommentCol::all();
+        $imgAc = ImageAc::all();
 
         return view('page1', compact('collines'));
 

@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 //route pour le stokage d'imageAccueil
 Route::get('/insert-image',[ImgAController::class, 'index']);
+Route::get('/affiche-image',[ImgAController::class, 'afficheImageAc'])->name('AffichageAc');
 Route::post('/insertion-imgAc',[ImgAController::class, 'store'])->name('insertionImage');
+Route::resource('/affiche-images',ImgAController::class);
 
 Route::get('/', [ProController::class, 'index'])->name('welcome'); //page principale
 

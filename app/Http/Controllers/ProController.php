@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Colline;
 use App\Models\Comment;
+use App\Models\ImageAc;
 use Illuminate\Http\Request;
 
 class ProController extends Controller
@@ -11,8 +12,9 @@ class ProController extends Controller
     public function index(){
         $comments = Comment::paginate(1);
         $collines =Colline::paginate(3);
+        $imgAc = ImageAc::all();
 
-        return view('page1', compact('comments','collines'));
+        return view('page1', compact('comments','collines','imgAc'));
     }
 
     public function showComments(){

@@ -14,6 +14,16 @@ class ImgAController extends Controller
         return view('partiels.insert_img_Ac');
     }
 
+    public function afficheImageAc ()
+    {
+        $imgAc = ImageAc::all();
+
+        // dd($imgAc);
+        return view('page1', compact('imgAc'));
+        // return view('page1',compact('image_acs'));
+
+    }
+
     public function store(Request $request)
     {
         $request ->validate(
@@ -22,10 +32,11 @@ class ImgAController extends Controller
             ]
             );
 
-        $path = $request->file('file')->store('/public/ImageAcs');
+        $path = $request->file('file')->store('public/ImageAcs');
 
         $imgAc = new ImageAc();
-        $imgAc->path = $request->path;
+        $imgAc->path = $path;
+        $imgAc->save();
 
         return redirect('/')->with('status',"succes !!!!!");
 

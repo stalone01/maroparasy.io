@@ -17,7 +17,7 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::view('/', 'welcome');
+// Route::view('/', 'welcome');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -35,7 +35,7 @@ Route::get('/affiche-image', [ImgAController::class, 'afficheImageAc'])->name('A
 Route::post('/insertion-imgAc', [ImgAController::class, 'store'])->name('insertionImage');
 Route::resource('/affiche-images', ImgAController::class);
 
-Route::get('/principale', [ProController::class, 'index'])->name('principale'); //page principale
+Route::get('/', [ProController::class, 'index'])->name('principale'); //page principale
 
 //route pour les comments
 

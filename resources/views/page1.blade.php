@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appli')
 @section('content')
     <div>
     @include('partiels.section1')

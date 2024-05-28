@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
-    @if (session('status'))
+@if (session('status'))
     <div>
         <p style="color: green;">
             {{session('status')}}
@@ -19,7 +19,7 @@
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase">
-            <tr>
+            <tr class="border-y">
                 <th scope="col" class="px-6 py-3 bg-gray-50">
                     #
                 </th>

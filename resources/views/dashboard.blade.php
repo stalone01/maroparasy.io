@@ -14,7 +14,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-2 gap-3">
                         <div class="h-auto max-w-full rounded-lg">
                             <h1>Messages</h1>
-                            @include('showPost')
+                            {{-- @include('showPost') --}}
                         </div>
                         <div class="h-auto max-w-full rounded-lg">
                             <h1>Utilisateurs</h1>

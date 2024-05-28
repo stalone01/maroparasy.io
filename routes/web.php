@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProController;
 use App\Http\Controllers\ColiController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ImgAController;
 use App\Http\Controllers\PostsController;
 
@@ -51,10 +52,12 @@ Route::post('/commentaireC/{id}', [ColiController::class, 'createCommentC'])->na
 
 Route::post('/update-posts', [PostsController::class, 'updatePost'])->name('updatePost'); //Update les Enregistrements
 
-Route::get('/list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
+Route::get('/dashboard.list.posts', [PostsController::class, 'showPosts'])->name('listPost'); //Affiche le liste
 Route::get('/delete-posts/{id}', [PostsController::class, 'delete_posts'])->name('deletePosts');
 
 Route::post('/create-posts', [PostsController::class, 'createPosts'])->name('posts'); //Enregistre des messages
+
+Route::get('/dashiboard-msg',[DashboardController::class, 'showPost'])->name('dashiboard-msg');
 
 Route::get('/update-posts/{id}', [PostsController::class, 'updatePosts'])->name('updateposts'); //lien vers la page de modification
 

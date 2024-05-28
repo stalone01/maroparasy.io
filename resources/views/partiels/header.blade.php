@@ -22,7 +22,7 @@
             <li class="hover:animate-bounce"><a href="#Apropos">A propos</a></li>
             <li class="hover:animate-bounce"><a href="#contact">Contacts</a></li>
             <li class="hover:animate-bounce"><a href="{{ route('listPost') }}">Messages</a></li>
-            <li class="hover:animate-bounce"><a href="{{ route('dashboard') }}">Dashboard</a></li>
+            <li class="hover:animate-bounce"><a href="{{ route('dashiboard-msg') }}">Dashboard</a></li>
         </ul>
     </div>
     <div class="flex items-center space-x-10 m-auto static me-10 ms-10 IntroHead" id="accueil">

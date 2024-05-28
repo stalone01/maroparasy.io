@@ -18,7 +18,7 @@ class PostsController extends Controller
 
         return view('showPost', compact('posts'));
     }
-    
+
     public function createPosts(Request $request)
     {
         $request->validate([

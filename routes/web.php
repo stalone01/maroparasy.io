@@ -17,7 +17,7 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-// Route::view('/', 'welcome');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

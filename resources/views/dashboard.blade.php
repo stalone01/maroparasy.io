@@ -14,10 +14,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-2 gap-3">
                         <div class="h-auto max-w-full rounded-lg">
                             <h1>Messages</h1>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequuntur minima perspiciatis modi natus. Delectus, voluptate rem numquam suscipit totam explicabo id necessitatibus expedita vel neque ducimus molestias! Ullam, rerum!
-                            </p>
+                            @include('showPost')
                         </div>
                         <div class="h-auto max-w-full rounded-lg">
                             <h1>Utilisateurs</h1>

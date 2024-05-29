@@ -21,7 +21,7 @@
             <li class="hover:animate-bounce"><a href="#Services">Services</a></li>
             <li class="hover:animate-bounce"><a href="#Apropos">A propos</a></li>
             <li class="hover:animate-bounce"><a href="#contact">Contacts</a></li>
-            <li class="hover:animate-bounce"><a href="{{ route('listPost') }}">Messages</a></li>
+            {{-- <li class="hover:animate-bounce"><a href="{{ route('listPost') }}">Messages</a></li> --}}
             <li class="hover:animate-bounce"><a href="{{ route('dashiboard-msg') }}">Dashboard</a></li>
         </ul>
     </div>

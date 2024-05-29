@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+    public $session;
+
     public function index(){
         $posts = Post::all();
 
@@ -53,7 +55,10 @@ class PostsController extends Controller
         $posts->message= $request->message;
         $posts->update();
 
-        return redirect('/list.posts')->with('status',"message a été bien modifié avec succes");
+        session()->flash('status', 'message a été bien modifié avec succes.');
+
+
+        return redirect('/dashiboard-msg');
     }
 
     public function delete_posts($id){

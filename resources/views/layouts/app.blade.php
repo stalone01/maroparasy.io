@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireStyles
     </head>
     <body class="bg-gray-200 font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
@@ -33,5 +34,6 @@
             </main>
         </div>
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        @livewireScripts
     </body>
 </html>
